@@ -250,7 +250,7 @@
   	<td class="firsttwocolums">11:15</td><td class="firsttwocolums">11:40</td>
     <td id="m8"></td>
     <td id="t8"></td>
-    <td id="w8"><center>Club</center></td>
+    <td id="w8"></td>
     <td id="th8"></td>
     <td id="f8"></td>
     </tr>
@@ -303,7 +303,7 @@
       <td id="f14"></td>
     </tr>
     <tr>
-      <td class="firsttwocolums">2:45</td><td class="firsttwocolums">3:10</td>
+      <td class="firsttwocolums">2:45</td><td class="firsttwocolums">3:15</td>
       <td id="m15"></td>
       <td id="t15"></td>
       <td id="w15"></td>
@@ -318,28 +318,28 @@
 
   <script>
   var fb13 = ['m1','m2','w1','w2','f1','f2','f3'];
-  var fb14 = ['m1','m2','w1','w2','f1','f2','t7'];
+  var fb14 = ['m1','m2','t7','w1','w2','f1','f2'];
   //
   var fb23 = ['m3','m4','t1','t2','th1','th2','th3'];
-  var fb24 = ['m3','m4','t1','t2','th1','th2','w5'];
+  var fb24 = ['m3','m4','t1','t2','w5','th1','th2'];
   //
   var fb33 = ['m5','m6','t3','t4','th4','th5','th6'];
-  var fb34 = ['m5','m6','t3','t4','th4','th5','w6'];
+  var fb34 = ['m5','m6','t3','t4','w6','th5','th6'];
   //
   var fb43 = ['t5','t6','w3','w4','f4','f5','f6'];
-  var fb44 = ['t5','t6','w3','w4','f5','f6','m7'];
+  var fb44 = ['m7','t5','t6','w3','w4','f5','f6'];
   //
-  var fb53 = ['m10','m11','w12','w13','th11','th12','th13'];
-  var fb54 = ['m10','m11','w12','w13','th12','th13','f9'];
+  var fb53 = ['t8','t9','w12','w13','f7','f8','f9'];
+  var fb54 = ['t8','t9','w12','w13','th7','f8','f9'];
   //
-  var fb63 = ['m12','m13','w10','w11','f11','f12','f13'];
-  var fb64 = ['m12','m13','w10','w11','f11','f12','th9'];
+  var fb63 = ['m8','m9','w7','w8','w9','th8','th9'];
+  var fb64 = ['m8','m9','w8','w9','th8','th9','t12'];
   //
-  var fb73 = ['t10','t11','t12','w14','w15','th14','th15'];
-  var fb74 = ['t10','t11','w14','w15','th14','th15','f10'];
+  var fb73 = ['m12','m13','m14','w14','w15','f14','f15'];
+  var fb74 = ['m12','m13','w14','w15','th12','f14','f15'];
   //
-  var fb83 = ['m14','m15','t13','t14','t15','f14','f15'];
-  var fb84 = ['m14','m15','t14','t15','th10','f14','f15'];
+  var fb83 = ['t13','t14','t15','th13','th14','th15','f12','f13'];
+  var fb84 = ['m15','t14','t15','th13','th14','th15','f12','f13'];
 
   function color(e,f){
     document.getElementById(e).style.backgroundColor = f;
@@ -432,13 +432,13 @@
   function flight53(){
     for(i=0;i<fb53.length;i++){
       color(fb53[i],'#87a37f');
-      color('f9','#D3D3D3');
+      color('th7','#D3D3D3');
     }
   }
   function flight54(){
     for(i=0;i<fb54.length;i++){
       color(fb54[i],'#87a37f');
-      color('th11','#D3D3D3');
+      color('f7','#D3D3D3');
     }
   }
   function flight5ilt(){
@@ -453,13 +453,13 @@
   function flight63(){
     for(i=0;i<fb63.length;i++){
       color(fb63[i],'#a5987f');
-      color('th9','#D3D3D3')
+      color('t12','#D3D3D3')
     }
   }
   function flight64(){
     for(i=0;i<fb64.length;i++){
       color(fb64[i],'#a5987f');
-      color('f13','#D3D3D3')
+      color('w7','#D3D3D3')
     }
   }
   function flight6ilt(){
@@ -474,13 +474,13 @@
   function flight73(){
     for(i=0;i<fb73.length;i++){
       color(fb73[i],'#ff9d00');
-      color('f10','#D3D3D3');
+      color('th12','#D3D3D3');
     }
   }
   function flight74(){
     for(i=0;i<fb74.length;i++){
       color(fb74[i],'#ff9d00');
-      color('t12','#D3D3D3');
+      color('m14','#D3D3D3');
     }
   }
   function flight7ilt(){
@@ -495,7 +495,7 @@
   function flight83(){
     for(i=0;i<fb83.length;i++){
       color(fb83[i],'#8f0fff');
-      color('th10','#D3D3D3');
+      color('m15','#D3D3D3');
     }
   }
   function flight84(){
@@ -514,30 +514,30 @@
   }
   //
   function lunchHS(){
-    document.getElementById('m8').innerHTML = "CAP";
-    document.getElementById('t8').innerHTML = "CAP";
-    document.getElementById('w7').innerHTML = "CAP";
-    document.getElementById('th7').innerHTML = "CAP";
-    document.getElementById('f7').innerHTML = "CAP";
+    document.getElementById('m10').innerHTML = "CAP";
+    document.getElementById('t10').innerHTML = "CAP";
+    document.getElementById('w10').innerHTML = "CAP";
+    document.getElementById('th10').innerHTML = "CAP";
+    document.getElementById('f10').innerHTML = "CAP";
     //
-    document.getElementById('m9').innerHTML = "Lunch";
-    document.getElementById('t9').innerHTML = "Lunch";
-    document.getElementById('w9').innerHTML = "Lunch";
-    document.getElementById('th8').innerHTML = "Lunch";
-    document.getElementById('f8').innerHTML = "Lunch";
+    document.getElementById('m11').innerHTML = "Lunch";
+    document.getElementById('t11').innerHTML = "Lunch";
+    document.getElementById('w11').innerHTML = "Lunch";
+    document.getElementById('th11').innerHTML = "Lunch";
+    document.getElementById('f11').innerHTML = "Lunch";
   }
   function lunchMS(){
-    document.getElementById('m8').innerHTML = "Lunch";
-    document.getElementById('t8').innerHTML = "Lunch";
-    document.getElementById('w7').innerHTML = "Lunch";
-    document.getElementById('th7').innerHTML = "Lunch";
-    document.getElementById('f7').innerHTML = "Lunch";
+    document.getElementById('m10').innerHTML = "Lunch";
+    document.getElementById('t10').innerHTML = "Lunch";
+    document.getElementById('w10').innerHTML = "Lunch";
+    document.getElementById('th10').innerHTML = "Lunch";
+    document.getElementById('f10').innerHTML = "Lunch";
     //
-    document.getElementById('m9').innerHTML = "CAP";
-    document.getElementById('t9').innerHTML = "CAP";
-    document.getElementById('w9').innerHTML = "CAP";
-    document.getElementById('th8').innerHTML = "CAP";
-    document.getElementById('f8').innerHTML = "CAP";
+    document.getElementById('m11').innerHTML = "CAP";
+    document.getElementById('t11').innerHTML = "CAP";
+    document.getElementById('w11').innerHTML = "CAP";
+    document.getElementById('th11').innerHTML = "CAP";
+    document.getElementById('f11').innerHTML = "CAP";
   }
   function printDiv(divName) {
      	var printContents = document.getElementById(divName).innerHTML;
